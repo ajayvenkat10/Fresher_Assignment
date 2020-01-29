@@ -18,7 +18,6 @@ public class ApplicationState {
     private ArrayList<StudentInfo> listOfObjects = new ArrayList<>();
     private HashMap<Integer, Boolean> map = new HashMap<>();
 
-    // todo: read a bit about reflection api's in java
     private ApplicationState() {
         isChanged = false;
         try {
