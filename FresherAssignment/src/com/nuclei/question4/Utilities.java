@@ -30,7 +30,7 @@ public class Utilities {
     public static void display(){
         ArrayList<Item> finalList = state.getItemsWithTax();
         Logger.log("Displaying contents: ");
-        System.out.println("Size of finalList: "+ finalList.size());
+        Logger.log("Size of finalList: "+ finalList.size());
         for(Item item: finalList){
             Logger.log();
             Logger.log("Item Name: " + item.getName());

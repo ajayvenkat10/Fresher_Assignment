@@ -1,4 +1,4 @@
-package com.nuclei.question1;
+package com.nuclei.question3;
 
 /**
  * The type Logger.
@@ -21,6 +21,11 @@ public class Logger {
         System.out.println(message);
     }
 
+    /**
+     * Logp.
+     *
+     * @param message the message
+     */
     public static void logp(String message) {
         System.out.print(message);
     }

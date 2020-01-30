@@ -15,7 +15,7 @@ public class CoreFunctions {
         while (valueSet) {
             try {
                 wait();
-                System.out.println("Fetch from DB");
+                Logger.log("Fetch from DB");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -34,7 +34,7 @@ public class CoreFunctions {
 
             try {
                 wait();
-                System.out.println("computeTax");
+                Logger.log("computeTax");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

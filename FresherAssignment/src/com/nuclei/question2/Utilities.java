@@ -12,7 +12,7 @@ public class Utilities {
      */
     public static void printBorder() {
         for (int i = 0; i < Constants.BORDER_LENGTH; i++)
-            System.out.print("_");
+            Logger.logp("_");
     }
 
     /**

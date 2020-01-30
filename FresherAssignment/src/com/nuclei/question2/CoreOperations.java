@@ -22,15 +22,15 @@ public class CoreOperations {
      */
     public static void enterDetails(StudentInfo student) {
         Logger.log("Enter student details:");
-        System.out.print("Full Name: ");
+        Logger.logp("Full Name: ");
         student.setFullName(Validation.validateFullName());
-        System.out.print("Age: ");
+        Logger.logp("Age: ");
         student.setAge(Validation.validateAge());
-        System.out.print("Address: ");
+        Logger.logp("Address: ");
         student.setAddress(Validation.validateAddress());
-        System.out.print("Roll Number: ");
+        Logger.logp("Roll Number: ");
         student.setRollNumber(Validation.validateRollNumber());
-        System.out.print("Courses: ");
+        Logger.logp("Courses: ");
         Logger.log("The available courses are: \nA B C D E F");
         Logger.log("Please choose 4 out of the given 6: ");
         student.setCourses(Validation.validateCourses());
@@ -43,7 +43,7 @@ public class CoreOperations {
      */
     public static void deleteDetails() {
         int rollNumberToDelete;
-        System.out.print("Enter the roll number of the student you want to delete: ");
+        Logger.logp("Enter the roll number of the student you want to delete: ");
         rollNumberToDelete = br.nextInt();
         if (state.deleteFromListOfObjects(rollNumberToDelete)) {
             Logger.log("Student deleted.");
@@ -65,7 +65,7 @@ public class CoreOperations {
             char option = br.next().toLowerCase().charAt(0);
             if (option == 'y') {
                 Logger.log("SortBy:\n1.Name \n2.Roll Number \n3.Age \n4.Address");
-                System.out.print("Enter your choice: ");
+                Logger.logp("Enter your choice: ");
                 int select = br.nextInt();
 
                 switch (select) {

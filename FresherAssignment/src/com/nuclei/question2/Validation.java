@@ -10,6 +10,7 @@ public class Validation {
      * The Br.
      */
     static Scanner br = new Scanner(System.in);
+    static boolean INPUT_TYPE_MISMATCH;
 
     /**
      * Validate name string.
@@ -26,7 +27,7 @@ public class Validation {
                 e.printEvent();
             }
 
-            System.out.print("Full Name: ");
+            Logger.logp("Full Name: ");
             fullName = br.nextLine();
         }
         return fullName;
@@ -39,16 +40,16 @@ public class Validation {
      */
     public static int validateAge() {
         int age = 0;
-        boolean flag = true;
-        while (flag) {
+         INPUT_TYPE_MISMATCH = true;
+        while (INPUT_TYPE_MISMATCH) {
             try {
                 age = br.nextInt();
-                flag = false;
+                INPUT_TYPE_MISMATCH = false;
             } catch (Exception e) {
                 e.printStackTrace();
                 Logger.log("Invalid input! Numbers only!");
                 br.next();
-                System.out.print("Age: ");
+                Logger.logp("Age: ");
             }
         }
         return age;
@@ -73,17 +74,17 @@ public class Validation {
     public static int validateRollNumber() {
         int rollNumber = 0;
         ApplicationState state = ApplicationState.getInstance();
-        boolean flag = true;
-        while (flag) {
+        INPUT_TYPE_MISMATCH = true;
+        while (INPUT_TYPE_MISMATCH) {
             try {
                 rollNumber = br.nextInt();
-                flag = false;
+                INPUT_TYPE_MISMATCH = false;
                 if (!state.getMap().containsKey(rollNumber)) {
                     state.addToMap(rollNumber);
                 } else {
                     Logger.log("User with this roll number already exists!");
                     Logger.log("Please enter an un registered roll number!");
-                    flag = true;
+                    INPUT_TYPE_MISMATCH = true;
                 }
 
             } catch (Exception e) {
@@ -92,8 +93,8 @@ public class Validation {
                 br.next();
             }
 
-            if (flag) {
-                System.out.print("Roll Number: ");
+            if (INPUT_TYPE_MISMATCH) {
+                Logger.logp("Roll Number: ");
             }
         }
         return rollNumber;
@@ -107,13 +108,13 @@ public class Validation {
     public static Set<Character> validateCourses() {
         Set<Character> coursesSet = new HashSet<Character>();
         for (int i = 1; i <= Constants.MAXIMUM_NUMBER_OF_COURSES; i++) {
-            boolean flag = true;
-            while (flag) {
-                System.out.print("Course " + i + ": ");
+            INPUT_TYPE_MISMATCH = true;
+            while (INPUT_TYPE_MISMATCH) {
+                Logger.logp("Course " + i + ": ");
                 char chosenCourse = br.next().toUpperCase().charAt(0);
                 if ((int) chosenCourse >= Constants.ASCII_VALUE_OF_A && (int) chosenCourse <= Constants.ASCII_VALUE_OF_F) {
                     if (!coursesSet.contains(chosenCourse)) {
-                        flag = false;
+                        INPUT_TYPE_MISMATCH = false;
                         coursesSet.add(chosenCourse);
                     } else {
                         Logger.log("Duplicate entry!");
@@ -123,7 +124,7 @@ public class Validation {
                     Logger.log("The available courses are: \nA B C D E F");
                 }
 
-                if (flag) {
+                if (INPUT_TYPE_MISMATCH) {
                     Logger.log("Please enter a new course out of the remaining " + (Constants.MAXIMUM_NUMBER_OF_AVAILABLE_COURSES - (i - 1)) + " courses.");
                 }
             }

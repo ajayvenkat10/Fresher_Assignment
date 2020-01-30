@@ -10,7 +10,7 @@ public class Validation {
      * The Br.
      */
     static Scanner br = new Scanner(System.in);
-
+    static boolean INPUT_TYPE_MISMATCH;
     /**
      * Validate name string.
      *
@@ -27,7 +27,7 @@ public class Validation {
                 e.printEvent("Invalid input! Alphabets and numbers only!");
             }
 
-            System.out.print("-name: ");
+            Logger.logp("-name: ");
             name = br.nextLine();
         }
         return name;
@@ -40,16 +40,16 @@ public class Validation {
      */
     public static double validatePrice() {
         double price = 0.0;
-        boolean flag = true;
-        while (flag) {
+         INPUT_TYPE_MISMATCH= true;
+        while (INPUT_TYPE_MISMATCH) {
             try {
                 price = br.nextDouble();
-                flag = false;
+                INPUT_TYPE_MISMATCH = false;
             } catch (Exception e) {
                 e.printStackTrace();
                 Logger.log("Invalid input! Numbers only!");
                 br.next();
-                System.out.print("-price: ");
+                Logger.logp("-price: ");
             }
         }
         return price;
@@ -62,16 +62,16 @@ public class Validation {
      */
     public static int validateQuantity() {
         int quantity = 0;
-        boolean flag = true;
-        while (flag) {
+        INPUT_TYPE_MISMATCH = true;
+        while (INPUT_TYPE_MISMATCH) {
             try {
                 quantity = br.nextInt();
-                flag = false;
+                INPUT_TYPE_MISMATCH = false;
             } catch (Exception e) {
                 e.printStackTrace();
                 Logger.log("Invalid input! Numbers only!");
                 br.next();
-                System.out.print("-quantity: ");
+                Logger.logp("-quantity: ");
             }
         }
         return quantity;
@@ -84,14 +84,14 @@ public class Validation {
      */
     public static int validateType() {
         int type = 0;
-        boolean flag = true;
-        while (flag) {
+        INPUT_TYPE_MISMATCH = true;
+        while (INPUT_TYPE_MISMATCH) {
             try {
                 type = br.nextInt();
-                flag = false;
+                INPUT_TYPE_MISMATCH = false;
                 if (type > Constants.MAXIMUM_TYPE_VALUE || type < Constants.MINIMUM_TYPE_VALUE) {
                     Logger.log("Invalid option! Please enter a number between 1-3 only!");
-                    flag = true;
+                    INPUT_TYPE_MISMATCH = true;
                 }
 
             } catch (Exception e) {
@@ -100,9 +100,9 @@ public class Validation {
                 br.next();
             }
 
-            if (flag) {
+            if (INPUT_TYPE_MISMATCH) {
                 Logger.log("-type: \n1.raw \n2.manufactured \n3.imported ");
-                System.out.print("Enter the type of the item by choosing the number associated with it: ");
+                Logger.logp("Enter the type of the item by choosing the number associated with it: ");
             }
         }
         return type;

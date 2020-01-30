@@ -1,4 +1,4 @@
-package com.nuclei.question1;
+package com.nuclei.question3;
 
 
 /**
@@ -7,6 +7,7 @@ package com.nuclei.question1;
 public class ApplicationException extends Throwable {
 
     private ExceptionType identifier;
+    private String info;
 
     /**
      * Instantiates a new Application exception.
@@ -16,6 +17,7 @@ public class ApplicationException extends Throwable {
     public ApplicationException(ExceptionType type) {
         super();
         identifier = type;
+        info = "";
     }
 
     /**
@@ -24,8 +26,9 @@ public class ApplicationException extends Throwable {
      * @param errorMessage the error message
      */
     public ApplicationException(String errorMessage) {
-        super();
+        super(errorMessage);
         identifier = ExceptionType.GENERIC;
+        info = errorMessage;
     }
 
     /**
@@ -37,15 +40,14 @@ public class ApplicationException extends Throwable {
     public ApplicationException(ExceptionType type, String errorMessage) {
         super(errorMessage);
         identifier = type;
+        info = errorMessage;
     }
 
     /**
      * Print event.
-     *
-     * @param info the info
      */
-    public void printEvent(String info) {
-        Logger.log("Exception: " + identifier);
+    public void printEvent() {
+//        Logger.log("Exception: " + identifier);
         Logger.log(info);
     }
 }

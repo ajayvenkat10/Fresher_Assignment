@@ -13,7 +13,7 @@ public class Utilities {
 
     public static void printBorder() {
         for (int i = 0; i < Constants.BORDER_LENGTH; i++)
-            System.out.print("_");
+            Logger.logp("_");
     }
 
     /**
@@ -36,14 +36,14 @@ public class Utilities {
     public static void entry(Item items) {
         Scanner br = new Scanner(System.in);
         Logger.log("Enter the item details: ");
-        System.out.print("-name: ");
+        Logger.logp("-name: ");
         items.setName(Validation.validateName());
-        System.out.print("-price: ");
+        Logger.logp("-price: ");
         items.setPrice(Validation.validatePrice());
-        System.out.print("-quantity: ");
+        Logger.logp("-quantity: ");
         items.setQuantity(Validation.validateQuantity());
         Logger.log("-type: \n1.raw \n2.manufactured \n3.imported ");
-        System.out.print("Enter the type of the item by choosing the number associated with it: ");
+        Logger.logp("Enter the type of the item by choosing the number associated with it: ");
         items.setType(Validation.validateType());
         Logger.log("\nItem entry successful!");
 

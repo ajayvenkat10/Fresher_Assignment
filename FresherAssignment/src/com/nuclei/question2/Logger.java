@@ -18,4 +18,7 @@ public class Logger {
         System.out.println(message);
     }
 
+    public static void logp(String message) {
+        System.out.print(message);
+    }
 }

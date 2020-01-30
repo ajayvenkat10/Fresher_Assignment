@@ -7,6 +7,6 @@ public class Main {
         CoreFunctions coreFunctions = new CoreFunctions();
         new SQLOps(coreFunctions);
         new TaxLogic(coreFunctions);
-        System.out.println();
+        Logger.log();
     }
 }

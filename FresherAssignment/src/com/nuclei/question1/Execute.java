@@ -41,7 +41,7 @@ public class Execute {
                         e.printEvent("Invalid option! Please enter one of the right options");
                     }
             }
-            System.out.print("\nDo you want to enter details of any other item(y/n): ");
+            Logger.logp("\nDo you want to enter details of any other item(y/n): ");
             choice = input.next().charAt(0);
 
         } while (true);

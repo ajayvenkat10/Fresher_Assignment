@@ -18,7 +18,7 @@ public class Menu {
             try {
                 Logger.log("Student database");
                 Logger.log("1.Add User Details \n2.Display User Details \n3.Delete User Details \n4.Save User Details \n5.Exit");
-                System.out.print("Enter your choice: ");
+                Logger.logp("Enter your choice: ");
                 choice = input.nextInt();
 
                 switch (choice) {
