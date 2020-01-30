@@ -1,0 +1,15 @@
+Open MySQL in command line by executing:
+    cd /usr/local/mysql/bin/mysql -u root -p
+
+Execute the following commands in mysql:
+
+1. create database itemDB;
+
+2. use itemDB;
+
+3. create table item(name varchar(20), price float(10), quantity float(10), type varchar(20));
+
+4. insert into item values("iPhone 11", 92000.00, 2, "imported"),("OnePlus 7 Pro", 45500, 3, "manufactured"),("Redmi Note 8", 19999, 1, "raw");
+
+You are good to go after executing the above commands.
+Run the package's main function.
