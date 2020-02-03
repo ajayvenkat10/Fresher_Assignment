@@ -2,58 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ed370c7-13ff-492e-8813-8f66de5a5dae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/AncestorsAndDescendants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/ApplicationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/ApplicationState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/ExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/ExceptionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/Functions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/GraphOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/Inputs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/Options.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/Utilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuclei/question3/Validation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question1/ApplicationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question1/ApplicationException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question1/Execute.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question1/Execute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question1/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question1/Logger.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question1/Utilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question1/Utilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question1/Validation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question1/Validation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question2/CoreOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question2/CoreOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question2/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question2/Logger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question2/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question2/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question2/Utilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question2/Utilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question2/Validation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question2/Validation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question3/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question3/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question4/CoreFunctions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question4/CoreFunctions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question4/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question4/Logger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question4/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question4/Utilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/question4/Utilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/test/Consumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/test/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/test/Producer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FresherAssignment/com/nuclei/test/Q.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuclei/question1/ApplicationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question1/ApplicationException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nuclei/question1/Execute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question1/Execute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuclei/question1/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question1/Logger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nuclei/question1/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question1/Utilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuclei/question1/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question1/Validation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuclei/question2/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question2/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuclei/question2/CoreOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question2/CoreOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuclei/question2/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question2/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuclei/question2/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question2/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuclei/question2/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question2/Utilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuclei/question2/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question2/Validation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nuclei/question4/CoreFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question4/CoreFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuclei/question4/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question4/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuclei/question4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question4/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nuclei/question4/SQLOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question4/SQLOps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nuclei/question4/TaxLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question4/TaxLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuclei/question4/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuclei/question4/Utilities.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +56,7 @@
       <recent name="com.company" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (5)">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nuclei.question2.Main" />
       <module name="FresherAssignment" />
@@ -177,10 +134,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (5)" />
-        <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (3)" />
+        <item itemvalue="Application.Main (5)" />
+        <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
@@ -271,8 +228,8 @@
       <screen x="0" y="23" width="1280" height="715" />
     </state>
     <state x="427" y="142" key="FileChooserDialogImpl/0.23.1280.715@0.23.1280.715" timestamp="1579803147107" />
-    <state width="1280" height="10" key="GridCell.Tab.0.bottom" timestamp="1580402158318">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state width="1280" height="159" key="GridCell.Tab.0.bottom" timestamp="1580736771437">
+      <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state width="1280" height="213" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580283227166" />
     <state width="1238" height="192" key="GridCell.Tab.0.bottom/0.23.1280.710@0.23.1280.710" timestamp="1580104905099" />
@@ -280,11 +237,12 @@
     <state width="1238" height="170" key="GridCell.Tab.0.bottom/0.23.1280.715@0.23.1280.715" timestamp="1580133460088" />
     <state width="1280" height="187" key="GridCell.Tab.0.bottom/0.23.1280.716@0.23.1280.716" timestamp="1580280853510" />
     <state width="1280" height="492" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1580383692391" />
-    <state width="1280" height="10" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1580402158318" />
-    <state width="1280" height="213" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1580285249123" />
+    <state width="1280" height="244" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1580465263154" />
+    <state width="1280" height="244" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1580463808525" />
     <state width="1280" height="266" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1580365977708" />
-    <state width="1280" height="10" key="GridCell.Tab.0.center" timestamp="1580402158316">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state width="1280" height="159" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1580736771437" />
+    <state width="1280" height="159" key="GridCell.Tab.0.center" timestamp="1580736771435">
+      <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state width="1280" height="213" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1580283227161" />
     <state width="1238" height="192" key="GridCell.Tab.0.center/0.23.1280.710@0.23.1280.710" timestamp="1580104905098" />
@@ -292,11 +250,12 @@
     <state width="1238" height="170" key="GridCell.Tab.0.center/0.23.1280.715@0.23.1280.715" timestamp="1580133460087" />
     <state width="1280" height="187" key="GridCell.Tab.0.center/0.23.1280.716@0.23.1280.716" timestamp="1580280853508" />
     <state width="1280" height="492" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1580383692388" />
-    <state width="1280" height="10" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1580402158316" />
-    <state width="1280" height="213" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1580285249122" />
+    <state width="1280" height="244" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1580465263153" />
+    <state width="1280" height="244" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1580463808522" />
     <state width="1280" height="266" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1580365977707" />
-    <state width="1280" height="10" key="GridCell.Tab.0.left" timestamp="1580402158315">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state width="1280" height="159" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1580736771435" />
+    <state width="1280" height="159" key="GridCell.Tab.0.left" timestamp="1580736771431">
+      <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state width="1280" height="213" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1580283227160" />
     <state width="1238" height="192" key="GridCell.Tab.0.left/0.23.1280.710@0.23.1280.710" timestamp="1580104905096" />
@@ -304,11 +263,12 @@
     <state width="1238" height="170" key="GridCell.Tab.0.left/0.23.1280.715@0.23.1280.715" timestamp="1580133460087" />
     <state width="1280" height="187" key="GridCell.Tab.0.left/0.23.1280.716@0.23.1280.716" timestamp="1580280853507" />
     <state width="1280" height="492" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1580383692385" />
-    <state width="1280" height="10" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1580402158315" />
-    <state width="1280" height="213" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1580285249122" />
+    <state width="1280" height="244" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1580465263153" />
+    <state width="1280" height="244" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1580463808520" />
     <state width="1280" height="266" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1580365977707" />
-    <state width="1280" height="10" key="GridCell.Tab.0.right" timestamp="1580402158317">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state width="1280" height="159" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1580736771431" />
+    <state width="1280" height="159" key="GridCell.Tab.0.right" timestamp="1580736771436">
+      <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state width="1280" height="213" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1580283227162" />
     <state width="1238" height="192" key="GridCell.Tab.0.right/0.23.1280.710@0.23.1280.710" timestamp="1580104905099" />
@@ -316,41 +276,47 @@
     <state width="1238" height="170" key="GridCell.Tab.0.right/0.23.1280.715@0.23.1280.715" timestamp="1580133460088" />
     <state width="1280" height="187" key="GridCell.Tab.0.right/0.23.1280.716@0.23.1280.716" timestamp="1580280853509" />
     <state width="1280" height="492" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1580383692389" />
-    <state width="1280" height="10" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1580402158317" />
-    <state width="1280" height="213" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1580285249123" />
+    <state width="1280" height="244" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1580465263153" />
+    <state width="1280" height="244" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1580463808524" />
     <state width="1280" height="266" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1580365977708" />
-    <state width="1280" height="158" key="GridCell.Tab.1.bottom" timestamp="1580283154219">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1280" height="159" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1580736771436" />
+    <state width="1280" height="284" key="GridCell.Tab.1.bottom" timestamp="1580463367449">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1280" height="158" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580283154219" />
     <state width="1238" height="216" key="GridCell.Tab.1.bottom/0.23.1280.715@0.23.1280.715" timestamp="1580132463597" />
     <state width="1238" height="216" key="GridCell.Tab.1.bottom/0.23.1280.716@0.23.1280.716" timestamp="1580209368012" />
     <state width="1280" height="305" key="GridCell.Tab.1.bottom/0.23.1280.721@0.23.1280.721" timestamp="1580282269612" />
-    <state width="1280" height="158" key="GridCell.Tab.1.center" timestamp="1580283154217">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1280" height="284" key="GridCell.Tab.1.bottom/0.23.1280.724@0.23.1280.724" timestamp="1580463367449" />
+    <state width="1280" height="284" key="GridCell.Tab.1.center" timestamp="1580463367448">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1280" height="158" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1580283154217" />
     <state width="1238" height="216" key="GridCell.Tab.1.center/0.23.1280.715@0.23.1280.715" timestamp="1580132463596" />
     <state width="1238" height="216" key="GridCell.Tab.1.center/0.23.1280.716@0.23.1280.716" timestamp="1580209368012" />
     <state width="1280" height="305" key="GridCell.Tab.1.center/0.23.1280.721@0.23.1280.721" timestamp="1580282269610" />
-    <state width="1280" height="158" key="GridCell.Tab.1.left" timestamp="1580283154217">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1280" height="284" key="GridCell.Tab.1.center/0.23.1280.724@0.23.1280.724" timestamp="1580463367448" />
+    <state width="1280" height="284" key="GridCell.Tab.1.left" timestamp="1580463367448">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1280" height="158" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1580283154217" />
     <state width="1238" height="216" key="GridCell.Tab.1.left/0.23.1280.715@0.23.1280.715" timestamp="1580132463596" />
     <state width="1238" height="216" key="GridCell.Tab.1.left/0.23.1280.716@0.23.1280.716" timestamp="1580209368011" />
     <state width="1280" height="305" key="GridCell.Tab.1.left/0.23.1280.721@0.23.1280.721" timestamp="1580282269610" />
-    <state width="1280" height="158" key="GridCell.Tab.1.right" timestamp="1580283154218">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1280" height="284" key="GridCell.Tab.1.left/0.23.1280.724@0.23.1280.724" timestamp="1580463367448" />
+    <state width="1280" height="284" key="GridCell.Tab.1.right" timestamp="1580463367448">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1280" height="158" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1580283154218" />
     <state width="1238" height="216" key="GridCell.Tab.1.right/0.23.1280.715@0.23.1280.715" timestamp="1580132463597" />
     <state width="1238" height="216" key="GridCell.Tab.1.right/0.23.1280.716@0.23.1280.716" timestamp="1580209368012" />
     <state width="1280" height="305" key="GridCell.Tab.1.right/0.23.1280.721@0.23.1280.721" timestamp="1580282269611" />
-    <state x="228" y="118" key="IDE.errors.dialog" timestamp="1579802023447">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state width="1280" height="284" key="GridCell.Tab.1.right/0.23.1280.724@0.23.1280.724" timestamp="1580463367448" />
+    <state x="228" y="118" key="IDE.errors.dialog" timestamp="1580471378490">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="228" y="118" key="IDE.errors.dialog/0.23.1280.721@0.23.1280.721" timestamp="1579802023447" />
+    <state x="228" y="118" key="IDE.errors.dialog/0.23.1280.723@0.23.1280.723" timestamp="1580471378490" />
     <state x="281" y="23" width="999" height="721" key="SettingsEditor" timestamp="1580234227066">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
@@ -382,6 +348,10 @@
       <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state x="423" y="300" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.721@0.23.1280.721" timestamp="1580234275945" />
+    <state x="208" y="121" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1580463362316">
+      <screen x="0" y="23" width="1280" height="724" />
+    </state>
+    <state x="208" y="121" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1280.724@0.23.1280.724" timestamp="1580463362316" />
     <state x="289" y="23" width="929" height="464" key="dock-window-1" timestamp="1579845781767">
       <screen x="0" y="23" width="1280" height="716" />
     </state>

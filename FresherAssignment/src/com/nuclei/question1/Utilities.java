@@ -57,6 +57,18 @@ public class Utilities {
      * @param count the count
      */
 //Output function
+
+    public static void display(Item item) {
+            printBorder();
+            Logger.log();
+            Logger.log("Item Name: " + item.getName());
+            Logger.log("Item Price: " + item.getPrice());
+            //Rounding off to two decimal places
+            Logger.log("Sales Tax Liability Per Term: " + roundOff(item.getTax()));
+            Logger.log("Final Price: " + roundOff(item.getPrice() + item.getTax()));
+            printBorder();
+            Logger.log();
+    }
     public static void display(Item items[], int count) {
         for (int j = 0; j <= count; j++) {
             printBorder();

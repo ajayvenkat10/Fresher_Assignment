@@ -24,7 +24,6 @@ public class SQLOps implements Runnable {
         }
         try {
             while (resultSet.next()) {
-//                Logger.log("SQLOps run");
                 Item item = new Item();
                 item.setName(resultSet.getString("name"));
                 item.setPrice(resultSet.getFloat("price"));

@@ -19,7 +19,6 @@ public class TaxLogic implements Runnable {
         Logger.log("Tax thread started");
 
         while(true){
-//            Logger.log("TaxLogic run");
             core.computeTax();
             if(state.getTerminate()){
                 break;

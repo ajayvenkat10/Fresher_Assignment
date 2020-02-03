@@ -26,18 +26,20 @@ public class Execute {
                     items[state.getCount()] = new Item();
                     Utilities.entry(items[state.getCount()]);            //Call to enter details
                     calculateTax(items[state.getCount()]);     //Call to calculate tax
-                    Utilities.display(items, state.getCount());          //Call to display inventory
+                    Utilities.display(items[state.getCount()]);          //Call to display inventory
                     state.incrementCount();
                     break;
 
                 case 'n':
+                    Logger.log("Inventory items: ");
+                    state.decrementCount();
+                    Utilities.display(items,state.getCount());
                     System.exit(0);
 
                 default:
                     try {
                         throw new ApplicationException(ExceptionType.INVALID_INPUT);
                     } catch (ApplicationException e) {
-                        e.printStackTrace();
                         e.printEvent("Invalid option! Please enter one of the right options");
                     }
             }

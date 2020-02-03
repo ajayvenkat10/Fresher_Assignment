@@ -1,7 +1,5 @@
 package com.nuclei.question4;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class CoreFunctions {
@@ -10,44 +8,37 @@ public class CoreFunctions {
     static boolean valueSet = false;
     static ArrayList<Item> items = new ArrayList<>();
 
-    synchronized public void fetchFromDB(Item item) {
-
+    public synchronized void fetchFromDB(Item item) {
         while (valueSet) {
             try {
                 wait();
-                Logger.log("Fetch from DB");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-
+        //        Logger.log("Fetch from DB");
         items.add(item);
-        state.incrementCount();
         valueSet = true;
         notify();
-
     }
 
-    synchronized public void computeTax() {
 
+    public synchronized void computeTax() {
         while (!valueSet) {
-
             try {
                 wait();
-                Logger.log("computeTax");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+        Logger.log("Compute Tax");
         if (items.size() != 0) {
             Item item = items.get(items.size() - 1);
             item.setTax(BusinessLogic.calculateTax(item));
             state.addToItemsWithTax(item);
         }
+
         valueSet = false;
         notify();
-
     }
-
-
 }
