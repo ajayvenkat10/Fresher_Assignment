@@ -20,7 +20,7 @@ public class FileIO {
             objectOutputStream.writeObject(students);
             objectOutputStream.close();
         } catch (Exception e) {
-            e.printStackTrace();
+            ;
         }
     }
 
@@ -42,12 +42,11 @@ public class FileIO {
             fileInputStream.close();
 
         } catch (FileNotFoundException e) {
-
+//            Logger.log("File Not Found!");
         } catch (IOException ioe) {
-            ioe.printStackTrace();
+            Logger.log("Invalid Input");
         } catch (ClassNotFoundException c) {
             Logger.log("Class not found");
-            c.printStackTrace();
         }
         return studentList;
     }

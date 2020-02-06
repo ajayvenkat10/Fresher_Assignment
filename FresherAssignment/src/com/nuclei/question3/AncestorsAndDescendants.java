@@ -14,38 +14,47 @@ public class AncestorsAndDescendants {
     /**
      * Obtain ancestors.
      *
-     * @param node the node
+     * @param
      */
-    public static void obtainAncestors(Node node) {
-        HashSet<Integer> parents = node.getParents();
 
+    public static void obtainAncestorsUtil(HashSet<Integer> parents, HashSet<Node> ancestors){
         if (parents.size() == 0) {
             return;
         }
 
         for (Integer parent : parents) {
             Node parentNode = state.getNodeMap().get(parent);
-            state.addToAncestors(parentNode);
-            obtainAncestors(parentNode);
+            ancestors.add(parentNode);
+            obtainAncestorsUtil(parentNode.getParents(), ancestors);
         }
+    }
+
+    public static HashSet<Node> obtainAncestors(Node node) {
+        HashSet<Node> ancestors = new HashSet<>();
+        obtainAncestorsUtil(node.getParents(),ancestors);
+        return ancestors;
     }
 
     /**
      * Obtain descendants.
      *
-     * @param node the node
+     * @param
      */
-    public static void obtainDescendants(Node node) {
-        HashSet<Integer> children = node.getChildren();
 
+    public static void obtainDescendantsUtil(HashSet<Integer> children, HashSet<Node> descendants){
         if (children.size() == 0) {
             return;
         }
 
         for (Integer child : children) {
             Node childNode = state.getNodeMap().get(child);
-            state.addToDescendants(childNode);
-            obtainDescendants(childNode);
+            descendants.add(childNode);
+            obtainDescendantsUtil(childNode.getChildren(), descendants);
         }
+    }
+    public static HashSet<Node> obtainDescendants(Node node) {
+        HashSet<Node> descendants = new HashSet<>();
+        obtainDescendantsUtil(node.getChildren(), descendants);
+        return descendants;
     }
 }

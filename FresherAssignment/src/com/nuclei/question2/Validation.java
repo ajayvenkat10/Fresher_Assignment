@@ -46,7 +46,7 @@ public class Validation {
                 age = br.nextInt();
                 INPUT_TYPE_MISMATCH = false;
             } catch (Exception e) {
-                e.printStackTrace();
+                ;
                 Logger.log("Invalid input! Numbers only!");
                 br.next();
                 Logger.logp("Age: ");
@@ -88,7 +88,7 @@ public class Validation {
                 }
 
             } catch (Exception e) {
-                e.printStackTrace();
+                ;
                 Logger.log("Invalid input! Numbers only!");
                 br.next();
             }

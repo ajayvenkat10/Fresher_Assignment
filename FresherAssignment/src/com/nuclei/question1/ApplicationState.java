@@ -9,13 +9,12 @@ public class ApplicationState {
 
     private int count;
 
-    // todo: read a bit about reflection api's in java
     private ApplicationState(){
         try {
             if(instance != null)
                 throw new IllegalAccessException();
         } catch (IllegalAccessException e) {
-            e.printStackTrace();
+            ;
         }
     }
 

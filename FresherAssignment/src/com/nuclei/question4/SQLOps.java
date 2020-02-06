@@ -20,7 +20,7 @@ public class SQLOps implements Runnable {
         try {
             resultSet = Utilities.statement.executeQuery(Constants.QUERY);
         } catch (SQLException e) {
-            e.printStackTrace();
+            ;
         }
         try {
             while (resultSet.next()) {
@@ -33,7 +33,7 @@ public class SQLOps implements Runnable {
             }
             state.setTerminate(true);
         } catch (Exception e) {
-            e.printStackTrace();
+            ;
         }
     }
 }

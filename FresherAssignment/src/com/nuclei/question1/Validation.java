@@ -23,7 +23,6 @@ public class Validation {
             try {
                 throw new ApplicationException(ExceptionType.INVALID_INPUT);
             } catch (ApplicationException e) {
-                e.printStackTrace();
                 e.printEvent("Invalid input! Alphabets and numbers only!");
             }
 
@@ -46,7 +45,6 @@ public class Validation {
                 price = br.nextDouble();
                 INPUT_TYPE_MISMATCH = false;
             } catch (Exception e) {
-                e.printStackTrace();
                 Logger.log("Invalid input! Numbers only!");
                 br.next();
                 Logger.logp("-price: ");
@@ -68,7 +66,7 @@ public class Validation {
                 quantity = br.nextInt();
                 INPUT_TYPE_MISMATCH = false;
             } catch (Exception e) {
-                e.printStackTrace();
+                ;
                 Logger.log("Invalid input! Numbers only!");
                 br.next();
                 Logger.logp("-quantity: ");
@@ -95,7 +93,7 @@ public class Validation {
                 }
 
             } catch (Exception e) {
-                e.printStackTrace();
+                ;
                 Logger.log("Invalid input! Numbers only!");
                 br.next();
             }

@@ -52,7 +52,7 @@ public class BusinessLogic {
                 try {
                     throw new ApplicationException(ExceptionType.INVALID_INPUT);
                 } catch (ApplicationException e) {
-                    e.printStackTrace();
+                    ;
                     e.printEvent("Invalid input for type");
                 }
         }

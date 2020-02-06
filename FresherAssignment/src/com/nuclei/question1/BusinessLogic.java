@@ -32,7 +32,6 @@ public class BusinessLogic {
      *
      * @param items the items
      */
-// todo: read and implement strategy pattern
     public static void calculateTax(Item items) {
         double itemCost = items.getPrice();
         double common = 0.125 * itemCost;              //Common equation involved in first two types
@@ -54,7 +53,7 @@ public class BusinessLogic {
                 try {
                     throw new ApplicationException(ExceptionType.INVALID_INPUT);
                 } catch (ApplicationException e) {
-                    e.printStackTrace();
+                    ;
                     e.printEvent("Invalid input for type");
                 }
         }

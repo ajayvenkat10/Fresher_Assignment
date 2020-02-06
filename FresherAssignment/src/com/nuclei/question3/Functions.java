@@ -38,8 +38,7 @@ public class Functions implements GraphOperations{
     public void getAncestors(int nodeId) {
         if (state.getIdMap().containsKey(nodeId)) {
             Node node = state.getNodeMap().get(nodeId);
-            AncestorsAndDescendants.obtainAncestors(node);
-            Utilities.displayAncestors(state.getAncestors(), nodeId);
+            Utilities.displayAncestors(AncestorsAndDescendants.obtainAncestors(node), nodeId);
         } else {
             ExceptionHandler.handleNodeDoesNotExistException(Constants.INVALID_NODE);
         }
@@ -50,8 +49,7 @@ public class Functions implements GraphOperations{
     public void getDescendants(int nodeId) {
         if (state.getIdMap().containsKey(nodeId)) {
             Node node = state.getNodeMap().get(nodeId);
-            AncestorsAndDescendants.obtainDescendants(node);
-            Utilities.displayDescendants(state.getDescendants(), nodeId);
+            Utilities.displayDescendants(AncestorsAndDescendants.obtainDescendants(node), nodeId);
         } else {
             ExceptionHandler.handleNodeDoesNotExistException(Constants.INVALID_NODE);
         }
@@ -107,16 +105,15 @@ public class Functions implements GraphOperations{
         if (state.getIdMap().containsKey(parentId)) {
             if (state.getIdMap().containsKey(childId)) {
                 Node parentNode = state.getNodeMap().get(parentId);
-                AncestorsAndDescendants.obtainAncestors(parentNode);
+                HashSet<Node> ancestors = AncestorsAndDescendants.obtainAncestors(parentNode);
                 Node childNode = state.getNodeMap().get(childId);
-                if (!state.getAncestors().contains(childNode)) {
+                if (!ancestors.contains(childNode)) {
                     parentNode.addToChildren(childId);
                     childNode.addToParents(parentId);
                     Logger.log("Dependency added successfully");
                 } else {
                     ExceptionHandler.handleCyclicDependencyException();
                 }
-                state.clearAncestors();
             } else {
                 ExceptionHandler.handleNodeDoesNotExistException(Constants.INVALID_CHILD_NODE);
             }

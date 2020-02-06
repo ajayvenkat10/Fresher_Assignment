@@ -72,7 +72,6 @@ public class Utilities {
     public static void display(Item items[], int count) {
         for (int j = 0; j <= count; j++) {
             printBorder();
-            Logger.log();
             Logger.log("Item Name: " + items[j].getName());
             Logger.log("Item Price: " + items[j].getPrice());
             //Rounding off to two decimal places

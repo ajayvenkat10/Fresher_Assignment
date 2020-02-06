@@ -32,13 +32,15 @@ public class Options {
     public static void options() {
 
         while (true) {
-
+            Logger.log();
+            Logger.log();
             Functions functions = new Functions();
             Logger.log("Welcome to Family Tree!");
             Logger.log("1.Get Parents of a Node\n2.Get Children of a Node\n3.Get Ancestors of a Node\n4.Get Descendants of a Node\n5.Delete Dependency\n6.Delete Node\n7.Add Dependency\n8.Add Node\n9.Exit");
             Logger.logp("Enter your choice: ");
             try {
                 int choice = input.nextInt();
+                Logger.log();
                 String name;
                 switch (choice) {
                     case 1:

@@ -9,14 +9,14 @@ public class CoreFunctions {
     static ArrayList<Item> items = new ArrayList<>();
 
     public synchronized void fetchFromDB(Item item) {
-        while (valueSet) {
+        if (valueSet) {
             try {
                 wait();
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                ;
             }
         }
-        //        Logger.log("Fetch from DB");
+        Logger.log("Fetch from DB");
         items.add(item);
         valueSet = true;
         notify();
@@ -24,11 +24,11 @@ public class CoreFunctions {
 
 
     public synchronized void computeTax() {
-        while (!valueSet) {
+        if (!valueSet) {
             try {
                 wait();
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                ;
             }
         }
         Logger.log("Compute Tax");

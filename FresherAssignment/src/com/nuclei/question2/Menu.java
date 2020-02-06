@@ -16,11 +16,14 @@ public class Menu {
         int choice;
         while (true) {
             try {
+                Logger.log();
+                Logger.log();
                 Logger.log("Student database");
                 Logger.log("1.Add User Details \n2.Display User Details \n3.Delete User Details \n4.Save User Details \n5.Exit");
                 Logger.logp("Enter your choice: ");
                 choice = input.nextInt();
-
+                Logger.log();
+                Logger.log();
                 switch (choice) {
                     case 1:
                         StudentInfo student = new StudentInfo();
@@ -48,7 +51,7 @@ public class Menu {
                         Utilities.invalidExceptionCall();
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                ;
             }
         }
     }

@@ -17,7 +17,7 @@ public class ApplicationState {
                 throw new IllegalAccessException();
             itemsWithTax.clear();
         } catch (IllegalAccessException e) {
-            e.printStackTrace();
+            ;
         }
     }
 

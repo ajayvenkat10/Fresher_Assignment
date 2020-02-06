@@ -13,8 +13,6 @@ public class ApplicationState {
     private static ApplicationState instance;
     private HashMap<Integer, Boolean> idMap = new HashMap<>();
     private HashMap<Integer, Node> nodeMap = new HashMap<>();
-    private HashSet<Node> ancestors = new HashSet<>();
-    private HashSet<Node> descendants = new HashSet<>();
 
     private ApplicationState() {
         try {
@@ -22,7 +20,6 @@ public class ApplicationState {
                 throw new IllegalAccessException();
 
         } catch (IllegalAccessException e) {
-            e.printStackTrace();
         }
     }
 
@@ -106,53 +103,4 @@ public class ApplicationState {
         return 1;
     }
 
-    /**
-     * Gets ancestors.
-     *
-     * @return the ancestors
-     */
-    public HashSet<Node> getAncestors() {
-        return ancestors;
-    }
-
-    /**
-     * Gets descendants.
-     *
-     * @return the descendants
-     */
-    public HashSet<Node> getDescendants() {
-        return descendants;
-    }
-
-    /**
-     * Add to ancestors.
-     *
-     * @param ancestorNode the ancestor node
-     */
-    public void addToAncestors(Node ancestorNode) {
-        ancestors.add(ancestorNode);
-    }
-
-    /**
-     * Add to descendants.
-     *
-     * @param descendantNode the descendant node
-     */
-    public void addToDescendants(Node descendantNode) {
-        descendants.add(descendantNode);
-    }
-
-    /**
-     * Clear ancestors.
-     */
-    public void clearAncestors() {
-        ancestors.clear();
-    }
-
-    /**
-     * Clear descendants.
-     */
-    public void clearDescendants() {
-        descendants.clear();
-    }
 }

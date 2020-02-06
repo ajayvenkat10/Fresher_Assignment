@@ -23,7 +23,7 @@ public interface Constants {
     /**
      * The constant BORDER_LENGTH.
      */
-    int BORDER_LENGTH = 2000;
+    int BORDER_LENGTH = 170;
     /**
      * The constant STUDENTS_DATA_FILE.
      */

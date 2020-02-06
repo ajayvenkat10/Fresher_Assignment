@@ -60,7 +60,6 @@ public class Utilities {
             for (Node ancestor : ancestors) {
                 Logger.log("ID: " + ancestor.getNodeId() + " Name: " + ancestor.getNodeName());
             }
-            state.clearAncestors();
         } else {
             ExceptionHandler.handleGenericException("Given node has no ancestors.");
         }
@@ -78,7 +77,6 @@ public class Utilities {
             for (Node descendant : descendants) {
                 Logger.log("ID: " + descendant.getNodeId() + " Name: " + descendant.getNodeName());
             }
-            state.clearDescendants();
         } else {
             ExceptionHandler.handleGenericException("Given node has no descendants.");
         }

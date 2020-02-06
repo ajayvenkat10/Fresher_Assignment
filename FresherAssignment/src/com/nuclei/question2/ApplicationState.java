@@ -24,7 +24,7 @@ public class ApplicationState {
             if (instance != null)
                 throw new IllegalAccessException();
         } catch (IllegalAccessException e) {
-            e.printStackTrace();
+            ;
         }
         try {
 

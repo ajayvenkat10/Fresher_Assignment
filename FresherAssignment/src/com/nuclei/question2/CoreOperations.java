@@ -58,49 +58,54 @@ public class CoreOperations {
      */
     public static void displayDetails() {
         ArrayList<StudentInfo> students = state.getListOfObjects();
-        Collections.sort(students);
-        try {
-            Logger.log("By default the records are sorted by name.");
-            Logger.log("Do you want to sort by another field? (y/n)?: ");
-            char option = br.next().toLowerCase().charAt(0);
-            if (option == 'y') {
-                Logger.log("SortBy:\n1.Name \n2.Roll Number \n3.Age \n4.Address");
-                Logger.logp("Enter your choice: ");
-                int select = br.nextInt();
+        if (students.size() == 0) {
+            Logger.log("Student database is empty!\nNo records to display!");
+        } else {
+            Collections.sort(students);
+            try {
+                Logger.log("By default the records are sorted by name.");
+                Logger.log("Do you want to sort by another field? (y/n)?: ");
+                char option = br.next().toLowerCase().charAt(0);
+                if (option == 'y') {
+                    Logger.log("SortBy:\n1.Name \n2.Roll Number \n3.Age \n4.Address");
+                    Logger.logp("Enter your choice: ");
+                    int select = br.nextInt();
 
-                switch (select) {
+                    switch (select) {
 
-                    case 1:
-                        Logger.log("Sorted by Name: ");
-                        NameComparator nameComparator = new NameComparator();
-                        Collections.sort(students, nameComparator);
-                        break;
+                        case 1:
+                            Logger.log("Sorted by Name: ");
+                            NameComparator nameComparator = new NameComparator();
+                            Collections.sort(students, nameComparator);
+                            break;
 
-                    case 2:
-                        Logger.log("Sorted by Roll Number: ");
-                        RollNumberComparator rollNumberComparator = new RollNumberComparator();
-                        Collections.sort(students, rollNumberComparator);
-                        break;
+                        case 2:
+                            Logger.log("Sorted by Roll Number: ");
+                            RollNumberComparator rollNumberComparator = new RollNumberComparator();
+                            Collections.sort(students, rollNumberComparator);
+                            break;
 
-                    case 3:
-                        Logger.log("Sorted by Age: ");
-                        AgeComparator ageComparator = new AgeComparator();
-                        Collections.sort(students, ageComparator);
+                        case 3:
+                            Logger.log("Sorted by Age: ");
+                            AgeComparator ageComparator = new AgeComparator();
+                            Collections.sort(students, ageComparator);
 
-                    case 4:
-                        Logger.log("Sorted by Address: ");
-                        AddressComparator addressComparator = new AddressComparator();
-                        Collections.sort(students, addressComparator);
+                        case 4:
+                            Logger.log("Sorted by Address: ");
+                            AddressComparator addressComparator = new AddressComparator();
+                            Collections.sort(students, addressComparator);
 
-                    default:
-                        Utilities.invalidExceptionCall();
+                        default:
+                            Utilities.invalidExceptionCall();
+                    }
                 }
+            } catch (InputMismatchException e) {
+                Logger.log(e.toString());
             }
-        } catch (InputMismatchException e) {
-            Logger.log(e.toString());
+
+            Utilities.displayFormat(students);
         }
 
-        Utilities.displayFormat(students);
     }
 
     /**
